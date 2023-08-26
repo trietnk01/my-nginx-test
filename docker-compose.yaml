@@ -1,0 +1,10 @@
+services:
+  nginx:
+    container_name: my-nginx    
+    restart: always
+    build:       
+      context: ./stack-fe      
+    ports:
+      - 80:80     
+  
+# docker compose -p hoidanit up -d
